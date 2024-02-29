@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./AmazonClone.css">
+</head>
+
+<body>
+    <div class="mainDiv">
+
+        <h1>signIn</h1>
+
+        <p id="noEmail" style="color: red; display: none">
+            Please enter your email id</p>
+
+        <p id="wrongEmail" style="color: red;display: none">
+            you are entered wrong email id</p>
+
+        <input onkeydown="handleEnterEmail()" type="text" placeholder="Email Id" id="inpEmail" />
+
+
+        <p id="noPwd" style="color: red;display: none">
+            please enter your password</p>
+
+        <p id="wrongPwd" style="color: red;display: none;">
+            you are entered wrong password</p>
+
+        <input onkeydown="handleEnterPwd()" type="password" placeholder="password" id="inpPwd" />
+
+        <button onclick="handleSignIn()">Sign In</button>
+    </div>
+    <script src="./AmazonClone.js"></script>
+</body>
+
+</html>

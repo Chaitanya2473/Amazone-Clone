@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./AmazonClone.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <script src="../Amazon/AmazonClone.js"></script>
+    <!--sidebar-->
+    <div class="sidebar" id="sidebar" style="display: none;">
+
+        <div class="sidebar_top">
+            <h1>SideBar</h1>
+            <p onclick="handleCloseSidebar()">Close</p>
+
+        </div>
+        <div>content goes here..</div>
+    </div>
+    <!-- header -->
+    <header>
+        <!-- logo -->
+        <div class="headerData">
+            <img src="./amazonlogo1.png" alt="">
+        </div>
+
+
+
+        <!-- location -->
+        <div class="headerData">
+            <i class="fa fa-map-marker" style="color: aliceblue; font-size: 20px; margin-right: 5px;"
+                aria-hidden="true"></i>
+
+            <div class="headerText">
+                <p>Deliver to Chaitanya</p>
+                <h3>Nagpur</h3>
+            </div>
+        </div>
+
+        <!-- search bar -->
+        <div class="searchBar">
+            <input type="text" placeholder="Search Amazon.in" />
+            <i class="fa fa-search"
+                style="color: aliceblue; font-size: 20px;padding:10px;background-color:orange; margin-right: 5px;"
+                aria-hidden="true"></i>
+
+        </div>
+
+
+        <!-- account -->
+        <div class="headerData">
+            <div class="headerText">
+                <p>Hello Chaitanya</p>
+                <h3>Accounts & lists</h3>
+            </div>
+            <i class="fa fa-chevron-circle-down" style="color: aliceblue; font-size: 20px; margin-left: 5px"
+                aria-hidden="true"></i>
+        </div>
+
+
+        <!-- return & order -->
+        <div class="headerData">
+            <div class="headerText">
+                <p>Returns</p>
+                <h3>& Orders</h3>
+            </div>
+        </div>
+
+        <!-- cart -->
+        <div class="headerData">
+            <i class="fa fa-shopping-cart" style="color: aliceblue; font-size: 40px" aria-hidden="true"></i>
+        </div>
+
+
+    </header>
+
+    <!-- navbar -->
+
+    <nav>
+        <p>
+            <i onclick="handleOpenSidebar()" class="fa fa-bars" aria-hidden="true" style="color:aliceblue">All</i>
+
+        </p>
+
+        <p>Mobiles</p>
+        <p>AmazonPay</p>
+        <p>Beauty & Personal Care</p>
+        <p>Sell</p>
+    </nav>
+    <!-- image -->
+    <div class="AmazonImage">
+        <img src="./Amazonimage.jpg" alt="">
+    </div>
+
+    <!-- products -->
+
+    <div class="products" id="products">
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

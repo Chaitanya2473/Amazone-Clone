@@ -1,0 +1,277 @@
+
+*{
+    margin: 0;
+}
+header{
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px;
+    position: sticky;
+    top: 0;
+    z-index: 5555;
+
+    
+}
+.headerData>img{
+    width: 150px;
+}
+.headerData{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px;
+    border-radius: 4px;
+    border: 2px solid black;
+    
+}
+.headerData:hover{
+   border-color: white;
+   
+    cursor: pointer;
+}
+
+.headerText{
+    font-size: 14px;
+    font-weight: 500;
+    color: lightgrey;
+}
+
+.headerText>h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid gray;
+        border-radius: 10px;
+}
+.searchBar>input{
+    height: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+    width: 300px;
+    /* border-radius: 10px; */
+   
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #232f3e;
+    padding: 5px;
+    position: sticky;
+    top: 65px;
+    z-index: 9998;
+}
+nav>p{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px;
+    border: 2px solid #232f3e;
+    border-radius: 5px;
+}
+nav>p:hover{
+
+    border-color: white;
+    cursor: pointer;
+}
+
+.oneProduct{
+
+    border: 1px solid lightblue;
+    width: 220px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+}
+
+.oneProduct>img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    
+}
+.oneProduct>p{
+    font-size: 14px;
+    font-weight: 500;
+    color: orange;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.oneProduct>h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: green;
+    margin: 10px;
+
+}
+.oneProduct>button{
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+.oneProduct>button:hover{
+    color: orangered;
+    background-color: white;
+    border: 1px solid orangered;
+    cursor: pointer;transition: all 1s;
+}
+.ratingAndPrice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.ratingAndPrice>h1{
+ font-size: 30px;
+ font-weight: 700;
+ color:green;
+ margin: 10px;
+}
+.ratingAndPrice>h3{
+    font-size: 15px;
+    font-weight: 500;
+    color: gray;
+}
+.oneProduct>h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    margin: 10px;
+    text-align: center;
+}
+.oneProduct>h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    margin-left: 10px;
+    text-align: justify;
+    text-align: center;
+
+    height: 60px;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+/* .products{
+    display: flex;
+    flex-direction: row;
+} */
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 1060px;
+    margin: auto;
+}
+@media(max-width: 1059px){
+    .products{
+        display: grid;
+        grid-template: auto;
+        width: 800px;
+    }
+}
+@media(max-width:799px){
+    .products{
+        display: grid;grid-template: auto;
+            width: 530px;
+
+    }
+}
+@media(max-width:529px) {
+    .products {
+        display: grid;
+        grid-template: auto;
+        width: 265px;
+
+    }
+}
+.AmazonImage>img{
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-bottom: -200px;
+}
+/* SIGN-IN CSS */
+
+.mainDiv {
+
+    border: 1px solid lightgray;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainDiv>h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: orange;
+    margin: 10px;
+}
+
+.mainDiv>input[type='text'],
+.mainDiv>input[type='password'] {
+    width: 400px;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.mainDiv>button {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    font-weight: 400;
+    color: grey;
+    cursor: pointer;
+}
+.sidebar{
+
+    background-color: lightgray;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 400px;
+    z-index: 9999;
+
+    padding: 20px;
+}
+.sidebar_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sidebar_top>p{
+    color: red;
+    cursor: pointer;
+}
+.sidebar_top>p:hover{
+    text-decoration: underline;
+}
